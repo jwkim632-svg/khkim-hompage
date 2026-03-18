@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Kun Hun | Global BD Specialist Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-navy: #1a2a44;
+            --accent-blue: #0056b3;
+            --soft-blue: #e7f1ff;
+            --text-dark: #333;
+            --text-gray: #666;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Pretendard', sans-serif; }
+        body { background-color: #fcfcfc; color: var(--text-dark); line-height: 1.8; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 25px; }
+
+        /* Hero Section with Blue Background */
+        header { padding: 80px 0 50px; text-align: center; }
+        .name { font-size: 2.8rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 20px; }
+        .highlight-box { 
+            background-color: var(--accent-blue); 
+            color: var(--white); 
+            padding: 35px; 
+            border-radius: 12px; 
+            display: inline-block;
+            max-width: 850px;
+            box-shadow: 0 10px 25px rgba(0,86,179,0.2);
+        }
+        .highlight-box h2 { font-size: 1.5rem; margin-bottom: 12px; font-weight: 700; letter-spacing: 0.5px; }
+        .highlight-box p { font-size: 1.1rem; font-weight: 300; opacity: 0.95; line-height: 1.6; }
+
+        /* Contact Info */
+        .contact-row { margin-top: 30px; display: flex; justify-content: center; gap: 25px; color: var(--text-gray); font-size: 0.95rem; flex-wrap: wrap; }
+        .contact-row span i { color: var(--accent-blue); margin-right: 6px; }
+
+        /* Section Global */
+        section { padding: 60px 0; border-bottom: 1px solid #eee; }
+        .section-title { font-size: 1.8rem; color: var(--primary-navy); margin-bottom: 40px; display: flex; align-items: center; gap: 15px; }
+        .section-title::after { content: ''; flex: 1; height: 2px; background: var(--soft-blue); }
+
+        /* Project Cards (Prioritized) */
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 20px; }
+        .project-card { background: var(--white); border-left: 5px solid var(--accent-blue); padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.2s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card h3 { font-size: 1.2rem; margin-bottom: 10px; color: var(--accent-blue); }
+        .project-card p { font-size: 0.95rem; color: var(--text-gray); }
+
+        /* Experience Items */
+        .exp-item { margin-bottom: 50px; }
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+        .company { font-size: 1.4rem; font-weight: 700; color: var(--primary-navy); }
+        .date { color: var(--text-gray); font-size: 0.9rem; font-weight: 500; }
+        .position { display: block; color: var(--accent-blue); font-weight: 600; margin-bottom: 15px; font-size: 1.1rem; }
+        .task-list { list-style: none; padding-left: 5px; }
+        .task-list li { margin-bottom: 10px; position: relative; padding-left: 20px; font-size: 0.95rem; color: #444; }
+        .task-list li::before { content: '•'; color: var(--accent-blue); position: absolute; left: 0; font-weight: bold; }
+
+        /* Education & Others Columns */
+        .info-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .info-block h4 { font-size: 1.2rem; margin-bottom: 20px; border-bottom: 2px solid var(--soft-blue); padding-bottom: 10px; color: var(--primary-navy); }
+        .edu-item { margin-bottom: 18px; }
+        .edu-item strong { display: block; color: var(--text-dark); }
+        .edu-item span { color: var(--text-gray); font-size: 0.9rem; }
+
+        footer { padding: 60px 0; text-align: center; background: #f4f4f4; color: #888; font-size: 0.85rem; border-top: 1px solid #eee; }
+
+        @media (max-width: 768px) {
+            .name { font-size: 2.2rem; }
+            .project-grid { grid-template-columns: 1fr; }
+            .info-columns { grid-template-columns: 1fr; }
+            .exp-header { flex-direction: column; gap: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="name">김건훈 (Chris Kim)</h1>
+        <div class="highlight-box">
+            <h2>Global Bio Business Development & Licensing Specialist</h2>
+            <p>전략적 사고와 전문적 기술 이해도를 바탕으로 <br>글로벌 제약 바이오 시장의 딜 메이킹을 주도합니다.</p>
+        </div>
+        <div class="contact-row">
+            <span><i class="fa-solid fa-envelope"></i> khun2k@gmail.com</span>
+            <span><i class="fa-solid fa-phone"></i> 010-2627-1629</span>
+            <span><i class="fa-solid fa-location-dot"></i> 인천광역시 부평구</span>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <section id="projects">
+        <h2 class="section-title">Key Project Achievements</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>중국 H사 신약 기술수출 (L/O)</h3>
+                <p>자궁내막증 신약 1.7억 불 규모 계약 체결 실무 담당. Term Sheet 합의부터 본계약 협상 및 체결 전 과정 리딩.</p>
+            </div>
+            <div class="project-card">
+                <h3>프랑스 O사 기술도입 (L/I)</h3>
+                <p>글로벌 공동연구 및 기술도입 옵션 계약 체결. BD 메인 컨택 포인트로서 협상 전략 수립 및 계약 성사 주도.</p>
+            </div>
+            <div class="project-card">
+                <h3>다국적 제약사(M사, B사) CTCSA</h3>
+                <p>공동임상 및 의약품 지원 계약 체결. 글로벌 기준의 본 계약서 및 부속 계약서 심도 있는 검토 및 협상 진행.</p>
+            </div>
+            <div class="project-card">
+                <h3>일본 Platform Tech 파트너링</h3>
+                <p>원어민 수준의 일본어 역량을 활용한 플랫폼 기술 공동연구 협의 및 L/O Term Sheet 합의 프로세스 진행.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="company">유한양행 (Yuhan)</span>
+                <span class="date">2023.04 — 재직 중</span>
+            </div>
+            <span class="position">글로벌BD팀 / 과장대리</span>
+            <ul class="task-list">
+                <li>해외 제약사 기술이전 계약 검토 및 Due Diligence(실사) 준비 총괄</li>
+                <li>경쟁약물 분석 및 자사 약물의 차별화 포인트 발굴을 통한 포지셔닝 전략 수립</li>
+                <li>자사 Asset(항암, 면역, 대사질환)의 NCD, CD 작성 및 파트너링 실무 주도</li>
+                <li>데이터베이스(Datamonitor, GlobalData 등) 활용 경쟁 Landscape 분석</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="company">㈜티움바이오 (TiumBio)</span>
+                <span class="date">2021.02 — 2023.04</span>
+            </div>
+            <span class="position">사업개발1팀 / 매니저</span>
+            <ul class="task-list">
+                <li>글로벌 바이오 컨퍼런스(BIO USA, Europe 등) 참가 및 잠재적 파트너사 발굴</li>
+                <li>L/O, L/I, CDA, CTCSA 등 다양한 계약 체결 및 Alliance Management 수행</li>
+                <li>VDR 관리 및 연구 부서 협업을 통한 기술 이전(Technical Transfer) 프로세스 운영</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="company">㈜에빅스젠 (Avixgen)</span>
+                <span class="date">2019.04 — 2021.01</span>
+            </div>
+            <span class="position">사업개발팀 / 연구원</span>
+            <ul class="task-list">
+                <li>아토피, 노인성 황반변성 등 주요 파이프라인 시장 조사 및 경쟁 특허 분석</li>
+                <li>Bio Korea, Bio Europe 컨퍼런스 발표용 영문 Non-confidential slide deck 작성</li>
+                <li>국외 CDMO/CRO 발주 관리 및 계약서 검토, 이슈 핸들링 서포트</li>
+                <li>기술특례상장 준비를 위한 기술사업계획서 작성 및 파이프라인 데이터베이스 구축</li>
+                <li>특허 법인 연계 자사 IP 현황 관리 및 신규 출원 프로세스 운영</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="info-columns">
+            <div class="info-block">
+                <h4>Education</h4>
+                <div class="edu-item">
+                    <strong>도쿄대학 대학원 (The University of Tokyo)</strong>
+                    <span>생명과학 석사 (2017.04 - 2019.03)</span>
+                </div>
+                <div class="edu-item">
+                    <strong>사이타마대학 (Saitama University)</strong>
+                    <span>분자생물학 학사 (2013.04 - 2017.03)</span>
+                </div>
+                <div class="edu-item">
+                    <strong>경희대학교 국제교육원</strong>
+                    <span>한일공동이공계학부유학생 과정 수료</span>
+                </div>
+            </div>
+            <div class="info-block">
+                <h4>Others (Scholarship & Award)</h4>
+                <div class="edu-item">
+                    <strong>한일공동이공계학부유학생</strong>
+                    <span>국비지원 전액장학생 (2012 - 2017)</span>
+                </div>
+                <div class="edu-item">
+                    <strong>유한양행 사내 R&D 혁신상</strong>
+                    <span>2024년 수상</span>
+                </div>
+                <div class="edu-item">
+                    <strong>KDDF Young BD 워크숍</strong>
+                    <span>Negotiation Simulation 최우수 팀상 (2022)</span>
+                </div>
+                <div class="edu-item">
+                    <strong>Language Skills</strong>
+                    <span>English (Native, TOEIC 980), Japanese (Native, JLPT N1)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 KUN HUN (CHRIS) KIM. All rights reserved.</p>
+        <p style="margin-top: 10px; opacity: 0.6;">This portfolio is designed for professional Bio-BD opportunities.</p>
+    </div>
+</footer>
+
+</body>
+</html>
